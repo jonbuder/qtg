@@ -24,3 +24,6 @@ Hello world, and welcome to the readme for the Query Table Generator!
 
 ***Who made it?***
 	Me - Jon Buder. This is my first project to go up on GitHub. As of the date of initial creation (June 26th, 2020), I'm still in the early stages of trying to teach myself web application development. I'm working on a bunch of small projects to get proficient and then hopefully I'll work my way up to the really useful stuff.
+
+***Can I see a demo?***
+	Sure - glad you asked. http://www.redub.io/qtg/
