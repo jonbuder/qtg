@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head><title>Query Table Generator</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Teko:wght@300&display=swap" rel="stylesheet">
+	<style>
+		* {	text-align: center; }
+		h1, h2, legend { font-family: 'Teko', sans-serif; margin: 0px; }
+		legend { font-size: 18pt; }
+		table, p {	font-family: 'Inconsolata', monospace; max-width: 40em; margin: auto; }
+		fieldset { max-width: 40em; margin: auto; }
+		#button { font-family: 'Teko', sans-serif; padding: 0em 1em 0em 1em; color: white; background-color: black; font-size: 32pt; }
+		#example {margin: auto; }
+		@media screen and (min-width:1600px) { #example { position: absolute; top: 20px; left: 20px; }
+	</style>
+	
+</head>
+
+<body>
+	<div class="header">
+		<img src="qtg.svg">
+		<h1>Query Table Generator</h1>
+		<h2>This tool will allow you to create HTML tables to view your MySQL queries in a web page.</h2>
+		
+	</div>
+<form action="generate.php">
+	<fieldset>
+		<legend>Database info - leave any or all blank if you wish:</legend>
+	<table>
+	<tr>
+		<td><label for="servername">MySQL server name:</label></td>
+		<td><input type="text" name="servername" id="servername"></td>
+	</tr>
+	<tr>
+		<td><label for="username">MySQL username:</label></td>
+		<td><input type="text" name="username" id="username"></td>
+	</tr>
+	<tr>
+		<td><label for="password">MySQL password:</label></td>
+		<td><input type="text" name="password" id="password"></td>
+	</tr>
+	<tr>
+		<td><label for="database">MySQL database:</label></td>
+		<td><input type="text" name="database" id="database"></td>
+	</tr>
+	
+</table>
+</fieldset>
+<fieldset>
+	<legend>Table and fields info - <b>bold</b> = required:</legend>
+	<table>
+	<tr>
+		<td><label for="table"><b>MySQL table:</b></label></td>
+		<td><input type="text" name="table" id="table" required></td>
+	</tr>
+	<tr>
+		<td><label for="field1"><b>Field 1:</b></label></td>
+		<td><input type="text" name="field1" id="field1" required></td>
+	</tr>
+	<tr>
+		<td><label for="field2">Field 2:</label></td>
+		<td><input type="text" name="field2" id="field2"></td>
+	</tr>
+	<tr>
+		<td><label for="field3">Field 3:</label></td>
+		<td><input type="text" name="field3" id="field3"></td>
+	</tr>	
+	<tr>
+		<td><label for="field4">Field 4:</label></td>
+		<td><input type="text" name="field4" id="field4"></td>
+	</tr>
+	<tr>
+		<td><label for="field5">Field 5:</label></td>
+		<td><input type="text" name="field5" id="field5"></td>
+	</tr>
+	<tr>
+		<td><label for="field6">Field 6:</label></td>
+		<td><input type="text" name="field6" id="field6"></td>
+	</tr>	
+	<tr>
+		<td><label for="field7">Field 7:</label></td>
+		<td><input type="text" name="field7" id="field7"></td>
+	</tr>
+	<tr>
+		<td><label for="field8">Field 8:</label></td>
+		<td><input type="text" name="field8" id="field8"></td>
+	</tr>
+	<tr>
+		<td><label for="field9">Field 9:</label></td>
+		<td><input type="text" name="field9" id="field9"></td>
+	</tr>
+	<tr>
+		<td><label for="field10">Field 10:</label></td>
+		<td><input type="text" name="field10" id="field10"></td>
+	</tr>
+	</table>
+</fieldset>
+
+<br>
+<input type="submit" value="Generate" id="button">
+</form>
+<br>
+<p>Instructions: Fill in as much of the top section as you like (the data does not get sent or saved anywhere), then all the fields you would like to pull in your query in the bottom section. On the following page, copy and paste the PHP code, tailor it as needed and run it on a web server with PHP installed and access to the MySQL server. That's it!</p>
+<br>
+<a href="test.php"><img src="example.svg" id="example"></a>
+
+</body>
+</html>
