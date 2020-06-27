@@ -1,5 +1,5 @@
 # qtg
-Query Table Generator
+
 Hello world, and welcome to the readme for the Query Table Generator!
 
 
